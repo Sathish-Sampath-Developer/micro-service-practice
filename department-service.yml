@@ -1,4 +1,7 @@
 spring:
+  boot:
+    message: Hello,Welcomeme message updated
+
   datasource:
     url: jdbc:postgresql://localhost:5432/department-service
     username: postgres
@@ -8,9 +11,7 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         ddl-auto: update
-  boot:
-    message: Hello, Welcome message updated
-    
+
   cloud:
     discovery:
       client:
@@ -19,3 +20,9 @@ spring:
 
 server:
   port: 9000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
