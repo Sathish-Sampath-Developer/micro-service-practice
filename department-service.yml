@@ -1,6 +1,6 @@
 spring:
   boot:
-    message: Hello,Welcomeme message updated
+    message: Hello,Welcomeme message changed
 
   datasource:
     url: jdbc:postgresql://localhost:5432/department-service
