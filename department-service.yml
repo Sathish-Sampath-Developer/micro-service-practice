@@ -21,8 +21,17 @@ spring:
 server:
   port: 9000
 
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+  level:
+    org.springframework.web: DEBUG
+
 management:
   endpoints:
     web:
       exposure:
         include: "*"
+  tracing:
+    sampling:
+      probability: 1.0
