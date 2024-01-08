@@ -13,7 +13,7 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         ddl-auto: update
   boot:
-    message: Hello,Welcomeme message changed
+    message: Hello,Welcomeme message updated
 
 eureka:
   instance:
